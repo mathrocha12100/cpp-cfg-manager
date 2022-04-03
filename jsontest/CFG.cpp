@@ -35,8 +35,6 @@ bool SystemFF::FolderAlreadyExists(std::string path, std::string folderName) {
 
 			if (SystemFF::GetFileExtension(en->d_name) == "") continue;
 
-			std::string nm = en->d_name;
-
 			if (!strcmp(en->d_name, folderName.c_str())) {
 				found = true;
 				break;
@@ -115,6 +113,17 @@ bool CFG::GetCFG(std::string path, json& JSON) {
 	if (in.good()) {
 		JSON = json::parse(in, nullptr, false);
 	
+		return true;
+	}
+
+	return false;
+}
+
+bool CFG::SaveCFG(std::string path, json JSON) {
+	std::ofstream file(path);
+
+	if (file.good()) {
+		file << JSON;
 		return true;
 	}
 

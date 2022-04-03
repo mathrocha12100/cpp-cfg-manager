@@ -16,6 +16,9 @@
     <Filter Include="Source Files\CFG">
       <UniqueIdentifier>{3842f2d1-cd76-49dd-9bee-ca1d310d1a02}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Includes">
+      <UniqueIdentifier>{e6644a83-8c55-4903-bd05-629ef2c02e65}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -26,14 +29,14 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\testecsgo\json.hpp">
-      <Filter>Source Files</Filter>
-    </ClInclude>
     <ClInclude Include="CFG.h">
       <Filter>Source Files\CFG</Filter>
     </ClInclude>
     <ClInclude Include="dirent.h">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Includes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\testecsgo\json.hpp">
+      <Filter>Source Files\Includes</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
