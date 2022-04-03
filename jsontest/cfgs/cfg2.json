@@ -1,0 +1,12 @@
+{
+    "radar": false,
+    "aimbot": {
+        "enabled": true,
+        "fov": 20,
+        "smooth": 0.4
+    },
+    "rcs": {
+        "enabled": false
+    },
+    "esp": false
+}

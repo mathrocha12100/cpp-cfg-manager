@@ -1,0 +1,11 @@
+{
+    "fov": 20,
+    "radar": true,
+    "aimbot": {
+        "enabled": true,
+        "fov": 20,
+        "smooth": 0.4
+    },
+
+    "esp": false
+}
